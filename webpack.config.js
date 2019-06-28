@@ -3,11 +3,12 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webfontsGenerator = require('webfonts-generator');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 webfontsGenerator({
     files: [
-      './images/sun.svg',
-      './images/ice-cream.svg'
+      './svg/sun.svg',
+      './svg/ice-cream.svg'
     ],
     dest: './src/scss/icon-fonts',
     fontName: 'custom-icon',
@@ -46,7 +47,12 @@ module.exports = {
           "style-loader",
           MiniCssExtractPlugin.loader,
           "css-loader",
-          "sass-loader"
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
+            }
+          }
         ]
       },
       {
@@ -84,5 +90,11 @@ module.exports = {
       template: './templates/index.html.twig',
       filename: './index.html'
     }),
+    new CopyWebpackPlugin([
+      {from:'src/images',to:'images'}
+    ]),
+    new CopyWebpackPlugin([
+      {from:'src/fonts',to:'fonts'}
+    ]),
   ]
 };
