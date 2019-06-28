@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "custom-icon";
+	src: url("custom-icon.eot?92589839239cedaa5ef6ecb31f4dedfa?#iefix") format("embedded-opentype"),
+url("custom-icon.woff2?92589839239cedaa5ef6ecb31f4dedfa") format("woff2"),
+url("custom-icon.woff?92589839239cedaa5ef6ecb31f4dedfa") format("woff");
+}
+
+.custom-icon {
+	line-height: 1;
+}
+
+.custom-icon:before {
+	font-family: custom-icon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.custom-icon-sun:before {
+	content: "\f101";
+}
+.custom-icon-ice-cream:before {
+	content: "\f102";
+}

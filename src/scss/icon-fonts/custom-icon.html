@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>custom-icon</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 10px 20px;
+		}
+
+		.preview {
+			line-height: 2em;
+		}
+
+		.preview__icon {
+			display: inline-block;
+			width: 32px;
+			text-align: center;
+		}
+
+		.icon {
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		@font-face {
+	font-family: "custom-icon";
+	src: url("custom-icon.eot?9f9d4cfe51ba9ad9481a261ddafb5663?#iefix") format("embedded-opentype"),
+url("custom-icon.woff2?9f9d4cfe51ba9ad9481a261ddafb5663") format("woff2"),
+url("custom-icon.woff?9f9d4cfe51ba9ad9481a261ddafb5663") format("woff");
+}
+
+.custom-icon {
+	line-height: 1;
+}
+
+.custom-icon:before {
+	font-family: custom-icon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.custom-icon-sun:before {
+	content: "\f101";
+}
+.custom-icon-ice-cream:before {
+	content: "\f102";
+}
+
+	</style>
+</head>
+<body>
+	<h1>custom-icon</h1>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-sun"></span>
+		</span>
+		<span>sun</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-ice-cream"></span>
+		</span>
+		<span>ice-cream</span>
+	</div>
+</body>
+</html>

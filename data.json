@@ -1,0 +1,17 @@
+{
+    "title": "This is the title",
+    "navigation": [
+        {
+            "label": "Home",
+            "link": "#"
+        },
+        {
+            "label": "Contact",
+            "link": "#"
+        },
+        {
+            "label": "About",
+            "link": "#"
+        }
+    ]
+}
