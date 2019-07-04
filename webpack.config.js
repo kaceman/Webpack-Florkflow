@@ -7,15 +7,19 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 webfontsGenerator({
     files: [
+      './svg/call.svg',
       './svg/sun.svg',
-      './svg/ice-cream.svg'
+      './svg/ice-cream.svg',
+      './svg/right-arrow.svg',
+      './svg/placeholder.svg',
+      './svg/zoom.svg',
     ],
     dest: './src/scss/icon-fonts',
     fontName: 'custom-icon',
     html: true,
     templateOptions: {
       classPrefix: 'custom-icon-',
-	    baseSelector: '.custom-icon'
+      baseSelector: '.custom-icon'
     }
 }, function(error) {
     if (error) {

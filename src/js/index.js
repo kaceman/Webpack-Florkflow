@@ -7,10 +7,10 @@ export default class Index {
     }
 
     init() {
-        $('.custom-icon').css({
-            'color': 'whitesmoke',
-            'font-size': '30em'
-        })
+        // $('.custom-icon').css({
+        //     'color': 'whitesmoke',
+        //     'font-size': '30em'
+        // })
         console.log(_.concat([1, 2], [3]))
     }
 }

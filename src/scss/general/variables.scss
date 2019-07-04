@@ -1,11 +1,16 @@
 /*--- Color ---*/
 $doc-c0: #fff;
 $doc-c1: #000;
-$doc-c3: #4CCB15;
+$doc-c3: #33ca56;
+$doc-c4: #D8D8D8;
 
 /*--- Font  ---*/
-$doc-robotothin: 'robotothin', sans-serif;
-$doc-creteround: 'creteround', sans-serif;
+$doc-firasanscondensed-regular: 'firasanscondensed-regular', sans-serif;
+$doc-firasanscondensed-light: 'firasanscondensed-light', sans-serif;
+$doc-firasanscondensed-medium: 'firasanscondensed-medium', sans-serif;
+
+/*--- Areas ---*/
+$padding-mobile: 16px;
 
 /*--- Responsive ---*/
 $maxDesktop: 'min-width: 1600px';

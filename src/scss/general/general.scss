@@ -12,9 +12,63 @@ h1{
 	font-size: 45px;
 	color: #fff;
 }
+
+a:link {
+	text-decoration: inherit;
+	color: inherit;
+	cursor: auto;
+}
+
+a:visited {
+	text-decoration: inherit;
+	color: inherit;
+	cursor: auto;
+}
+
+
 .doc_header--logo-noir
 {
 	color: #000;
 }
 
+.video {
+	&:before {
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: $doc-c3;
+		display: block;
+		position: absolute;
+		border-radius: 50%;
+		top: 0;
+		right: 0;
+		margin: -4px -8px;
+	}
+	&:after {
+		content: '►';
+		color: $doc-c0;
+		font-size: 8px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0 -4px;
+	}
+}
 
+section {
+	&.separator-after:after, &.separator-before:before {
+		content: '';
+		width: 75px;
+		height: 3px;
+		background-image: linear-gradient(106deg, #32b450 0%, #00fd6b 100%);
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&.separator-before:before {
+		top: 0;
+	}
+	&.separator-after:after {
+		bottom: 0;
+	}
+}

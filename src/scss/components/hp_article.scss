@@ -1,7 +1,19 @@
 .doc_article {
+  padding: $padding-mobile;
+  padding-top: 50px;
   &--item {
     h2 {
-      font-family: $doc-robotothin;
+      @include h2_article_title;
+    }
+    h3 {
+      color: $doc-c3;
+      font-family: $doc-firasanscondensed-medium;
+    }
+    &-image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

@@ -1,17 +1,26 @@
 @font-face {
-  font-family: 'robotothin';
-  src: url('/fonts/Roboto/Roboto-Thin.ttf') format('ttf'),
-  url('/fonts/Roboto/Roboto-Thin.woff') format('woff'),
-  url('/fonts/Roboto/Roboto-Thin.woff2') format('woff2');
+  font-family: 'firasanscondensed-regular';
+  src: url('/fonts/FiraSansCondensed/Regular/FiraSansCondensed-Regular.ttf') format('ttf'),
+  url('/fonts/FiraSansCondensed/Regular/FiraSansCondensed-Regular.woff') format('woff'),
+  url('/fonts/FiraSansCondensed/Regular/FiraSansCondensed-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'creteround';
-  src: url('/fonts/CreteRound/CreteRound-Regular.ttf') format('ttf'),
-  url('/fonts/CreteRound/CreteRound-Regular.woff') format('woff'),
-  url('/fonts/CreteRound/CreteRound-Regular.woff2') format('woff2');
+  font-family: 'firasanscondensed-light';
+  src: url('/fonts/FiraSansCondensed/Light/FiraSansCondensed-Light.ttf') format('ttf'),
+  url('/fonts/FiraSansCondensed/Light/FiraSansCondensed-Light.woff') format('woff'),
+  url('/fonts/FiraSansCondensed/Light/FiraSansCondensed-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'firasanscondensed-medium';
+  src: url('/fonts/FiraSansCondensed/Medium/FiraSansCondensed-Medium.ttf') format('ttf'),
+  url('/fonts/FiraSansCondensed/Medium/FiraSansCondensed-Medium.woff') format('woff'),
+  url('/fonts/FiraSansCondensed/Medium/FiraSansCondensed-Medium.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

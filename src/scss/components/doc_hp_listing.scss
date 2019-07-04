@@ -1,0 +1,39 @@
+.doc_hp_listing {
+  margin-top: 100px;
+  padding: 0 32px 70px;
+  position: relative;
+  h2 {
+    padding-top: 40px;
+    font-family: $doc-firasanscondensed-medium;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  i {
+    color: $doc-c3;
+    position: absolute;
+    font-size: 5em;
+    top: -40px;
+    right: 0;
+  }
+  hr {
+    margin: 0;
+  }
+  .video:before {
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: -3px;
+  }
+  .video:after {
+    font-size: 5px;
+    right: 15px;
+    top: -3px;
+  }
+
+  a {
+    @include button_white;
+    display: table;
+    margin: auto;
+  }
+}
