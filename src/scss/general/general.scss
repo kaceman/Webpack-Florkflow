@@ -72,3 +72,13 @@ section {
 		bottom: 0;
 	}
 }
+
+.doc_header {
+  height: 60px;
+  background-color: $doc-c3;
+  margin-bottom: 0;
+  @media screen and($phone){
+    width: 120vh;
+    height: 123px ;
+  }
+}
