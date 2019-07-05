@@ -17,7 +17,7 @@
     float: right;
     i {
       color: $doc-c0;
-      line-height: 45px;
+      line-height: 49px;
     }
   }
 
@@ -30,6 +30,7 @@
     align-content: stretch;
     margin: 0;
     height: 75px;
+    overflow-x: scroll;
     li {
       display: inline;
       margin-right: 10px;
