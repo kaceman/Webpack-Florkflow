@@ -1,0 +1,36 @@
+.doc_header
+{
+  &--navbar
+  {
+    &-btn{
+      margin-top: -25px;
+      padding-left: 93px;
+      a{
+        color: $doc_c0 !important;
+        font-size: 19px;
+        font-weight: 500;
+        font-family: $doc-firasans;
+      }
+      .button{
+        border: 1px solid $doc_c0;
+        border-radius: 14px;
+        background-color: $doc-c3;
+        padding: 7px 5px 6px 6px;
+      }
+    }
+    img{
+      width: 213px;
+      margin: auto;
+      display: block;
+      text-align: center;
+      padding-top: 18px;
+    }
+
+    nav{
+        float: right
+       }
+
+  }
+
+}
+
