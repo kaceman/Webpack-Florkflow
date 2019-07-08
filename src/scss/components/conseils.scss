@@ -1,0 +1,76 @@
+.doc_conseils {
+  padding: $padding-mobile;
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  &--whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    background: $doc-c3;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    z-index: 2;
+    box-shadow: 0 1px 5px 1px rgba(0,0,0,0.45);
+    i {
+      font-size: 15px;
+      color: $doc-c0;
+      position: absolute;
+      top: 23px;
+      left: 22px;
+    }
+    &:after {
+      content: '';
+      border: 10px solid transparent;
+      border-left-color: $doc-c3;
+      position: absolute;
+      bottom: -5px;
+      left: 5px;
+      transform: rotate(30deg);
+    }
+  }
+  &--black-box {
+    position: relative;
+    right: 0;
+    background-color: $doc-c1;
+    color: $doc-c0;
+    height: 80px;
+    left: 40px;
+    padding: 15px 0 0 35px;
+    h5, p {
+      font-family: $doc-firasanscondensed-medium;
+      margin: 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -17px;
+      width: 22px;
+      height: 81px;
+      background-color: $doc-c1;
+      display: block;
+      border-radius: 19px;
+      transform: rotate(-13deg);
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -13px;
+      width: 20px;
+      height: 50px;
+      background-color: $doc-c1;
+    }
+    i {
+      position: absolute;
+      color: $doc-c0;
+      top: 25px;
+      right: 30px;
+      font-size: 30px;
+    }
+  }
+}

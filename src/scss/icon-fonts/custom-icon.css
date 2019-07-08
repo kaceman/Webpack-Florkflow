@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "custom-icon";
-	src: url("custom-icon.eot?211bb82d1065834a0e63579093d094c1?#iefix") format("embedded-opentype"),
-url("custom-icon.woff2?211bb82d1065834a0e63579093d094c1") format("woff2"),
-url("custom-icon.woff?211bb82d1065834a0e63579093d094c1") format("woff");
+	src: url("custom-icon.eot?158fb936ea67c1ece05516686e449a55?#iefix") format("embedded-opentype"),
+url("custom-icon.woff2?158fb936ea67c1ece05516686e449a55") format("woff2"),
+url("custom-icon.woff?158fb936ea67c1ece05516686e449a55") format("woff");
 }
 
 .custom-icon {
@@ -16,9 +16,24 @@ url("custom-icon.woff?211bb82d1065834a0e63579093d094c1") format("woff");
 	vertical-align: top;
 }
 
-.custom-icon-sun:before {
+.custom-icon-call:before {
 	content: "\f101";
 }
-.custom-icon-ice-cream:before {
+.custom-icon-sun:before {
 	content: "\f102";
+}
+.custom-icon-ice-cream:before {
+	content: "\f103";
+}
+.custom-icon-right-arrow:before {
+	content: "\f104";
+}
+.custom-icon-placeholder:before {
+	content: "\f105";
+}
+.custom-icon-zoom:before {
+	content: "\f106";
+}
+.custom-icon-menu:before {
+	content: "\f107";
 }

@@ -1,0 +1,45 @@
+.doc_article_une {
+  &--container {
+    height: 375px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 375px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(66, 66, 89, 0.4);
+    }
+
+    &--titles {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%);
+      width: 100%;
+      z-index: 2;
+      h2 {
+        color: $doc-c0;
+        font-family: $doc-firasanscondensed-light;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      h3 {
+        color: $doc-c0;
+        font-family: $doc-firasanscondensed-medium;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+    }
+
+  }
+}

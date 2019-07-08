@@ -1,16 +1,42 @@
-<nav class="doc_header">
-    <header>
-            <div class="doc_header--wrapper">
-                <h1>Allo Docteurs<span class="doc_header--logo-noir">Africa</span></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Destination</a></li>
-                        <li><a href="#">google</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Facebook</a></li>
-                    </ul>
-                </nav>
+<header class="doc_header">
+    <nav class="doc_header--nav">
+        <div class="row">
+            <div class="col-8 col-sm-4 col-md-4 col-lg-4 order-sm-1 order-md-1 order-lg-1">
+                <img class="doc_header--nav-logo" src="/images/logo-white.png" alt="">
             </div>
-    </header>
- </nav>
+            <div class="col-2 col-sm-3 col-md-3 col-lg-3 order-sm-2 order-md-2 order-lg-2 country-switcher">
+                <div class="doc_header--nav-country-switcher">
+                    <div class="doc_header--nav-country-switcher-btn" id="dropdown-countries">
+                        <img class="doc_header--nav-country-switcher-img" src="/images/flags/morocco.svg" alt="">
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    Maroc <img src="/images/flags/morocco.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                South-africa <img src="/images/flags/south-africa.svg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2 col-sm-1 col-md-1 col-lg-1 order-sm-3 order-md-3 order-lg-3">
+                <button><i class="custom-icon custom-icon-menu"></i></button>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 order-sm-0 order-md-0 order-lg-0">
+                <ul class="doc_header--articles">
+                    <li><a href="#">{{ 'MamanBébé' | raw }}<span>3</span></a></li>
+                    <li><a href="#">{{ 'Bienêtre' | raw }}</a></li>
+                    <li><a href="#">Encyclopédie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

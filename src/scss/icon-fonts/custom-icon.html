@@ -27,9 +27,9 @@
 
 		@font-face {
 	font-family: "custom-icon";
-	src: url("custom-icon.eot?2616b04605fcb5e40edb20498452214d?#iefix") format("embedded-opentype"),
-url("custom-icon.woff2?2616b04605fcb5e40edb20498452214d") format("woff2"),
-url("custom-icon.woff?2616b04605fcb5e40edb20498452214d") format("woff");
+	src: url("custom-icon.eot?42b8e0d5b3701f2b3bc83ee1b063e446?#iefix") format("embedded-opentype"),
+url("custom-icon.woff2?42b8e0d5b3701f2b3bc83ee1b063e446") format("woff2"),
+url("custom-icon.woff?42b8e0d5b3701f2b3bc83ee1b063e446") format("woff");
 }
 
 .custom-icon {
@@ -43,17 +43,38 @@ url("custom-icon.woff?2616b04605fcb5e40edb20498452214d") format("woff");
 	vertical-align: top;
 }
 
-.custom-icon-sun:before {
+.custom-icon-call:before {
 	content: "\f101";
 }
-.custom-icon-ice-cream:before {
+.custom-icon-sun:before {
 	content: "\f102";
+}
+.custom-icon-ice-cream:before {
+	content: "\f103";
+}
+.custom-icon-right-arrow:before {
+	content: "\f104";
+}
+.custom-icon-placeholder:before {
+	content: "\f105";
+}
+.custom-icon-zoom:before {
+	content: "\f106";
+}
+.custom-icon-menu:before {
+	content: "\f107";
 }
 
 	</style>
 </head>
 <body>
 	<h1>custom-icon</h1>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-call"></span>
+		</span>
+		<span>call</span>
+	</div>
 	<div class="preview">
 		<span class="preview__icon">
 			<span class=" custom-icon-sun"></span>
@@ -65,6 +86,30 @@ url("custom-icon.woff?2616b04605fcb5e40edb20498452214d") format("woff");
 			<span class=" custom-icon-ice-cream"></span>
 		</span>
 		<span>ice-cream</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-right-arrow"></span>
+		</span>
+		<span>right-arrow</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-placeholder"></span>
+		</span>
+		<span>placeholder</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-zoom"></span>
+		</span>
+		<span>zoom</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" custom-icon-menu"></span>
+		</span>
+		<span>menu</span>
 	</div>
 </body>
 </html>

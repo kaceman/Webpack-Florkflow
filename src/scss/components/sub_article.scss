@@ -1,0 +1,27 @@
+.doc_sub_article {
+  padding: $padding-mobile;
+  &--item {
+    margin-bottom: 20px;
+    &-image {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      padding-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+    h4 {
+      font-family: $doc-firasanscondensed-light;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin: 0;
+      opacity: 0.4;
+    }
+    p {
+      font-family: $doc-firasanscondensed-medium;
+      font-size: 17px;
+      margin: 0;
+    }
+  }
+}

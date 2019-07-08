@@ -1,0 +1,16 @@
+@mixin h2_article_title {
+  font-family: $doc-firasanscondensed-light;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+@mixin button_white {
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 27px;
+  background-color: $doc-c0;
+  font-family: $doc-firasanscondensed-regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.24px;
+}

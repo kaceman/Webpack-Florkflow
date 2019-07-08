@@ -7,15 +7,20 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 webfontsGenerator({
     files: [
+      './svg/call.svg',
       './svg/sun.svg',
-      './svg/ice-cream.svg'
+      './svg/ice-cream.svg',
+      './svg/right-arrow.svg',
+      './svg/placeholder.svg',
+      './svg/zoom.svg',
+      './svg/menu.svg',
     ],
     dest: './src/scss/icon-fonts',
     fontName: 'custom-icon',
     html: true,
     templateOptions: {
       classPrefix: 'custom-icon-',
-	    baseSelector: '.custom-icon'
+      baseSelector: '.custom-icon'
     }
 }, function(error) {
     if (error) {
@@ -87,8 +92,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: true,
-      template: './templates/index.html.twig',
+      template: './templates/pages/index.html.twig',
       filename: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './templates/pages/detail_article.html.twig',
+      filename: './detail_article.html'
     }),
     new CopyWebpackPlugin([
       {from:'src/images',to:'images'}
