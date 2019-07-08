@@ -16,7 +16,7 @@ h1{
 a:link {
 	text-decoration: inherit;
 	color: inherit;
-	cursor: auto;
+	cursor: pointer;
 }
 
 a:visited {
@@ -71,14 +71,4 @@ section {
 	&.separator-after:after {
 		bottom: 0;
 	}
-}
-
-.doc_header {
-  height: 60px;
-  background-color: $doc-c3;
-  margin-bottom: 0;
-  @media screen and($phone){
-    width: 120vh;
-    height: 123px ;
-  }
 }

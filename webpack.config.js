@@ -13,6 +13,7 @@ webfontsGenerator({
       './svg/right-arrow.svg',
       './svg/placeholder.svg',
       './svg/zoom.svg',
+      './svg/menu.svg',
     ],
     dest: './src/scss/icon-fonts',
     fontName: 'custom-icon',
@@ -91,8 +92,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: true,
-      template: './templates/index.html.twig',
+      template: './templates/pages/index.html.twig',
       filename: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './templates/pages/detail_article.html.twig',
+      filename: './detail_article.html'
     }),
     new CopyWebpackPlugin([
       {from:'src/images',to:'images'}
