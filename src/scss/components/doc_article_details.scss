@@ -1,0 +1,213 @@
+.doc_article_details {
+  &--img {
+    width: 100%;
+    height: 375px;
+    position: relative;
+
+
+    &:after {
+      content: '';
+      height: 375px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(66, 66, 89, 0.4);
+    }
+
+    &--titles {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%);
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      h2 {
+        color: #ffffff;
+        font-family: $doc-firasanscondensed-medium;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &--container {
+    padding: 16px;
+
+    h3 {
+      color: $doc-c3;
+      font-family: $doc-firasanscondensed-medium;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 34px;
+    }
+
+    p {
+      color: $doc-c1;
+      font-family: $doc-firasanscondensed-light;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+      margin-top: 10px;
+      opacity: .8;
+    }
+
+    &-author {
+      img {
+        width: 35px;
+        border-radius: 50%;
+        float: left;
+      }
+      div:nth-of-type(1) {
+        float: left;
+        color: $doc-c1;
+        font-family: $doc-firasanscondensed-regular;
+        font-size: 10px;
+        font-weight: 400;
+        margin: 8px 10px;
+
+        &:after {
+          content: '';
+          width: 77px;
+          height: 4px;
+          background-image: linear-gradient(106deg, #32b450 0%, #00fd6b 100%);
+          display: block;
+        }
+      }
+      div:nth-of-type(2) {
+        float: right;
+        color: $doc-c1;
+        font-family: $doc-firasanscondensed-light;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 30px;
+      }
+    }
+
+    &-quote {
+      &-img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 51px;
+          border-radius: 50%;
+        }
+        &:after {
+          content: '”';
+          width: 51px;
+          height: 51px;
+          display: block;
+          background-color: $doc-c3;
+          position: absolute;
+          right: 0;
+          border-radius: 50%;
+          color: white;
+          text-align: center;
+          z-index: -1;
+          font-family: $doc-firasanscondensed-light;
+          font-size: 30px;
+          line-height: 71px;
+        }
+      }
+      p {
+        color: $doc-c1;
+        font-family: $doc-prospectus-regular;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 100;
+        margin: 0;
+      }
+      span {
+        float: right;
+        color: $doc-c4;
+        font-family: $doc-firasanscondensed-light;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 30px;
+        text-transform: uppercase;
+
+        &:before {
+          content: '';
+          width: 58px;
+          height: 1px;
+          background-color: $doc-c4;
+          display: block;
+          float: left;
+          margin-right: 20px;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    &-video {
+      .video_preview {
+        width: 100%;
+        height: 174px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:after {
+          content: '►';
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          background-color: $doc-c3;
+          position: absolute;
+          color: $doc-c0;
+          text-align: center;
+          line-height: 55px;
+          bottom: 16px;
+          right: 16px;
+        }
+      }
+
+      h4 {
+        color: $doc-c1;
+        font-family: $doc-firasanscondensed-medium;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        float: left;
+      }
+      span {
+        color: $doc-c1;
+        font-family: $doc-firasanscondensed-light;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 30px;
+        opacity: .6;
+        margin-top: 3px;
+        float: right;
+      }
+
+      .video_container {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        visibility: hidden;
+        iframe {
+          width: 90%;
+        }
+      }
+    }
+
+    &-tags {
+      @include listing_tags_style;
+    }
+  }
+}

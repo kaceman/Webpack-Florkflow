@@ -56,6 +56,17 @@ a:visited {
 }
 
 section {
+	hr {
+		position: absolute;
+		top: 1px;
+		z-index: -1;
+		margin: 0;
+		width: 100%;
+		right: 0;
+	}
+	&.separator-after, &.separator-before {
+		position: relative;
+	}
 	&.separator-after:after, &.separator-before:before {
 		content: '';
 		width: 75px;
