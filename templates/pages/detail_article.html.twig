@@ -2,4 +2,58 @@
 
 {% block body %}
 
+    {% set is_details = true %}
+    {% include '../includes/header.html.twig' %}
+
+    <section class="doc_article_details">
+        <div class="doc_article_details--img" style="background-image: url('/images/article_une.png');">
+            <div class="doc_article_details--img--titles">
+                <h2>Un brin de menthe sur 2 contient trop de pesticides !</h2>
+            </div>
+        </div>
+
+        <div class="doc_article_details--container">
+            <h3>Dévoilés par la presse marocaine, deux courriers officiels alertent sur la présence de pesticides dans la menthe produite au Maroc.</h3>
+
+            <div class="doc_article_details--container-author">
+                <img src="/images/avatar.png" alt="">
+                <div>Par Badr Kidiss</div>
+                <div>19.06.19</div>
+                <div class="clearfix"></div>
+            </div>
+            <p>
+                Peut-on continuer à boire du thé à la menthe au Maroc ? C’est la question que l’on peut se poser suite aux révélations de l’Office marocain de sécurité sanitaire des produits alimentaires (ONSSA) ! Cet organisme public a adressé, fin mai, deux courriers aux walis de Tanger-Tétouan-Al Hoceima et Souss-Massa-Draa pour signaler la “présence de résidus de pesticides dans la menthe destinée à la consommation”. Dans ces correspondances, l’organisme juge la situation alarmante et demande le soutien des autorités locales pour aider ses inspecteurs à mettre en oeuvre des mesures d’urgence.
+                De là à estimer que la menthe marocaine est actuellement impropre à la consommation?
+            </p>
+
+            {% include '../line/quote.html.twig' %}
+
+            <p>
+                D’après la lettre de la direction régionale de l’ONSSA de Tanger-Tetouan-Al Hoceima, des “échantillons ont été pris sur des marchés du gros et des grands souks de la région”. Et le résultat a de quoi couper l'appétit aux grands amateurs de cette plante aromatique. Car 7 échantillons sur 13 présentent des “taux de non-conformité très élevés”. En clair, ils pourraient être dangereux pour votre santé. Ces chiffres sont toutefois à nuancer d’après le responsable de l’ONSSA qui estime que “le Maroc exporte de grandes quantités de menthe qui sont conformes à la réglementation. Sur les quatre dernières années, nous n’avons eu aucun problème avec les pays de destination. Ce que nous faisons aujourd’hui est un rappel à l’ordre, un signal d’alerte pour les professionnels”. Rassurant certes, mais encore faudrait-il que la production destinée à la consommation locale soit aussi épargnée !
+            </p>
+
+            {% include '../line/video.html.twig' %}
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda consequuntur cupiditate dolorem enim error eveniet excepturi fugit itaque minima molestiae odit officiis perspiciatis placeat quae, quam tempora unde vero!
+            </p>
+
+            <ul class="doc_article_details--container-tags">
+                <li><a href="#"><span>Plantes</span></a></li>
+                <li><a href="#"><span>Pesticides</span></a></li>
+                <li><a href="#"><span>Maroc</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="doc_other_articles separator-before">
+        <hr />
+
+        <h2>Ces articles pourraient vous intéresser</h2>
+    </section>
+
+    {% include '../parts/sub_article.html.twig' %}
+
+    {% set can_share = true %}
+    {% include '../includes/footer.html.twig' %}
 {% endblock %}

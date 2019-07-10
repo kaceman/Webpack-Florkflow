@@ -8,12 +8,39 @@
             </a>
         </div>
         <div class="col-9">
-            <ul class="doc_footer--tags">
-                <li><a href="#"><span>Ebola</span></a></li>
-                <li><a href="#"><span>Grippe</span></a></li>
-                <li><a href="#"><span>VIH/SIDA</span></a></li>
-                <li><a href="#"><span>VIH/SIDA</span></a></li>
-            </ul>
+            {% if not can_share %}
+                <ul class="doc_footer--tags">
+                    <li><a href="#"><span>Ebola</span></a></li>
+                    <li><a href="#"><span>Grippe</span></a></li>
+                    <li><a href="#"><span>VIH/SIDA</span></a></li>
+                    <li><a href="#"><span>VIH/SIDA</span></a></li>
+                </ul>
+            {% else %}
+                <ul class="doc_footer--share">
+                    <li>Partager</li>
+                    <li>
+                        <a href="#">
+                            <span class="facebook">
+                                <i class="custom-icon custom-icon-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="twitter">
+                                <i class="custom-icon custom-icon-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="whatsapp">
+                                <i class="custom-icon custom-icon-call"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            {% endif %}
         </div>
     </div>
 </footer>

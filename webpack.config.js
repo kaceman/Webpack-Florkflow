@@ -14,6 +14,8 @@ webfontsGenerator({
       './svg/placeholder.svg',
       './svg/zoom.svg',
       './svg/menu.svg',
+      './svg/facebook.svg',
+      './svg/twitter.svg',
     ],
     dest: './src/scss/icon-fonts',
     fontName: 'custom-icon',

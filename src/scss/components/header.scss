@@ -6,8 +6,8 @@
     padding: 8px;
 
     @media ($phone) {
-      height: 123px;
-      padding: 16px;
+      height: auto;
+      padding: 8px 16px;
     }
     button {
       background: transparent;
