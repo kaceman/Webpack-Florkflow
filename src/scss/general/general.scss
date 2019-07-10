@@ -64,6 +64,12 @@ section {
 		width: 100%;
 		right: 0;
 	}
+
+	&.without-hr {
+		hr {
+			display: none;
+		}
+	}
 	&.separator-after, &.separator-before {
 		position: relative;
 	}

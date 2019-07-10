@@ -30,13 +30,15 @@
             <div class="col-2 col-sm-1 col-md-1 col-lg-1 order-sm-3 order-md-3 order-lg-3">
                 <button><i class="custom-icon custom-icon-menu"></i></button>
             </div>
-            <div class="col-12 col-sm-4 col-md-4 col-lg-4 order-sm-0 order-md-0 order-lg-0">
-                <ul class="doc_header--articles">
-                    <li><a href="#">{{ 'MamanBébé' | raw }}<span>3</span></a></li>
-                    <li><a href="#">{{ 'Bienêtre' | raw }}</a></li>
-                    <li><a href="#">Encyclopédie</a></li>
-                </ul>
-            </div>
+            {% if not is_details %}
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 order-sm-0 order-md-0 order-lg-0">
+                    <ul class="doc_header--articles">
+                        <li><a href="#">{{ 'MamanBébé' | raw }}<span>3</span></a></li>
+                        <li><a href="#">{{ 'Bienêtre' | raw }}</a></li>
+                        <li><a href="#">Encyclopédie</a></li>
+                    </ul>
+                </div>
+            {% endif %}
         </div>
     </nav>
 </header>

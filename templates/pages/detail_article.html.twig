@@ -1,6 +1,10 @@
 {% extends '../base.html.twig' %}
 
 {% block body %}
+
+    {% set is_details = true %}
+    {% include '../includes/header.html.twig' %}
+
     <section class="doc_article_details">
         <div class="doc_article_details--img" style="background-image: url('/images/article_une.png');">
             <div class="doc_article_details--img--titles">
