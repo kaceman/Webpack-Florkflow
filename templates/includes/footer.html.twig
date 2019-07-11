@@ -43,4 +43,44 @@
             {% endif %}
         </div>
     </div>
+    <div class="search_container">
+        <div class="search_container--form">
+            <div class="search_container--form-keyword-container">
+                <input {#value="Optique"#} placeholder="Chercher ici" type="text" class="search_container--form-keyword-container-input">
+                <button class="search_container--form-keyword-container-clear">
+                    <i class="custom-icon custom-icon-cancel"></i>
+                </button>
+            </div>
+            <button class="search_container--form-search-btn">
+                <i class="custom-icon custom-icon-zoom"></i>
+            </button>
+            <button class="search_container--form-close">Fermer</button>
+        </div>
+        <div class="search_container--results">
+            <span>08 résultats</span>
+            <div class="mt-2">
+                <h3>Articles <span>04</span></h3>
+                {% for result in results %}
+                    {% include '../line/listing_item.html.twig' %}
+
+                    {% if not loop.last %}
+                        <hr />
+                    {% endif %}
+                {% endfor %}
+                <a class="search_container--results-load_more" href="#">Plus d'articles</a>
+            </div>
+            <div class="mt-4">
+                <h3>Tutoriels <span>04</span></h3>
+                {% for result in results %}
+                    {% include '../line/listing_item.html.twig' %}
+
+                    {% if not loop.last %}
+                        <hr />
+                    {% endif %}
+                {% endfor %}
+                <a class="search_container--results-load_more" href="#">Plus de tutoriels</a>
+            </div>
+
+        </div>
+    </div>
 </footer>

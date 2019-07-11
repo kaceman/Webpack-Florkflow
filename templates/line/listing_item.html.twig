@@ -1,12 +1,14 @@
 <article class="doc_listing_sub">
-    <div class="row">
-        <div class="col-9">
-            <p>
-                Inauguration de l'hôpital militaire d'Abidjan
-            </p>
+    <a href="#">
+        <div class="row">
+            <div class="col-9">
+                <p>{{ result.text }}</p>
+            </div>
+            <div class="col-3">
+                <div class="{% if result.video %}video{% endif %}">
+                    <img src="{{ result.image }}" alt="">
+                </div>
+            </div>
         </div>
-        <div class="col-3 video">
-            <img src="/images/sub_item_doc.png" alt="">
-        </div>
-    </div>
+    </a>
 </article>

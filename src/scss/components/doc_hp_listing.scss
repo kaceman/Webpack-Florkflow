@@ -18,19 +18,8 @@
   hr {
     margin: 0;
   }
-  .video:before {
-    width: 15px;
-    height: 15px;
-    right: 15px;
-    top: -3px;
-  }
-  .video:after {
-    font-size: 5px;
-    right: 15px;
-    top: -3px;
-  }
 
-  a {
+  a.load-more {
     @include button_white;
     display: table;
     margin: auto;

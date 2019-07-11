@@ -2,17 +2,15 @@
     <h2>La santé au Bénin</h2>
     <i class="custom-icon custom-icon-placeholder"></i>
 
-    {% include '../line/listing_item.html.twig' %}
+    {% for result in results %}
+        {% include '../line/listing_item.html.twig' %}
 
-    <hr />
+        {% if not loop.last %}
+            <hr />
+        {% endif %}
+    {% endfor %}
 
-    {% include '../line/listing_item.html.twig' %}
-
-    <hr />
-
-    {% include '../line/listing_item.html.twig' %}
-
-    <a href="#">Plus d'infos locales</a>
+    <a class="load-more" href="#">Plus d'infos locales</a>
 
     {% include 'conseils.html.twig' %}
 

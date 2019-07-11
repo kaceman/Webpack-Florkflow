@@ -13,5 +13,22 @@
             "label": "About",
             "link": "#"
         }
+    ],
+    "results": [
+        {
+            "video": null,
+            "image": "/images/sub_item_doc.png",
+            "text": "La start-up Passcare se lance en Côte d’Ivoire"
+        },
+        {
+            "video": null,
+            "image": "/images/sub_item_doc.png",
+            "text": "La start-up Passcare se lance en Côte d’Ivoire"
+        },
+        {
+            "video": "WIjf-671UlM",
+            "image": "/images/sub_item_doc.png",
+            "text": "La start-up Passcare se lance en Côte d’Ivoire"
+        }
     ]
 }
